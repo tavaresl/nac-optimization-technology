@@ -1,0 +1,9 @@
+<app-cover titulo="Alunos"></app-cover>
+
+<app-grid-row>
+  <app-grid-cell md="3" lg="2" *ngFor="let aluno of alunos">
+    <app-person-card
+      [avatar]="aluno.avatar"
+      [nome]="aluno.nome"></app-person-card>
+  </app-grid-cell>
+</app-grid-row>
