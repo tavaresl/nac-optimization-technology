@@ -8,16 +8,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">{{titulo}}</a>
+      <a class="navbar-brand" [routerLink]="['/']">{{titulo}}</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Alunos</a></li>
-        <li><a href="#">Disciplinas</a></li>
-        <li><a href="#">Contatos</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/']">Home</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/alunos']">Alunos</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/disciplinas']">Disciplinas</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/contatos']">Contatos</a></li>
       </ul>
     </div><!-- /.navbar-collapse.navbar-right -->
   </div><!-- /.container-fluid -->
